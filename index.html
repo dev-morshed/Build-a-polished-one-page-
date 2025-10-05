@@ -1,0 +1,958 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Inspection Services - Professional Building Inspections</title>
+    <meta name="description" content="Professional construction inspection services with advanced equipment. Comprehensive building inspections for contractors, architects, and property owners.">
+    <meta name="keywords" content="construction inspection, building inspection, structural inspection, professional inspection services">
+    
+    <meta property="og:title" content="Construction Inspection Services - Professional Building Inspections">
+    <meta property="og:description" content="Professional construction inspection services with advanced equipment. Comprehensive building inspections for contractors, architects, and property owners.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://example.com/assets/img/og-image.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Construction Inspection Services">
+    <meta name="twitter:description" content="Professional construction inspection services with advanced equipment.">
+    <meta name="twitter:image" content="https://example.com/assets/img/og-image.jpg">
+    
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0E7B6B',
+                        secondary: '#F9F4EC',
+                        cream: '#F9F4EC',
+                        emerald: '#0E7B6B'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        
+        :root {
+            --primary-color: #0E7B6B;
+            --secondary-color: #F9F4EC;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--secondary-color);
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=Modern%20construction%20site%20with%20professional%20engineers%20conducting%20building%20inspections%2C%20architectural%20blueprints%20visible%2C%20construction%20workers%20wearing%20safety%20helmets%20and%20vests%2C%20clean%20minimalist%20background%20with%20soft%20natural%20lighting%2C%20professional%20photography%20style%2C%20high%20quality%20detailed%20image%20showing%20construction%20inspection%20process&width=1920&height=1080&seq=hero001&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(14, 123, 107, 0.1);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0a6b5c;
+            transform: translateY(-2px);
+        }
+        
+        .floating-buttons {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .floating-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(14, 123, 107, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(14, 123, 107, 0.4);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-content.active {
+            max-height: 200px;
+        }
+        
+        .lazy-image {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .lazy-image.loaded {
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .floating-buttons {
+                bottom: 1rem;
+                right: 1rem;
+            }
+            
+            .floating-btn {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    </style>
+</head>
+
+<body class="smooth-scroll">
+    <header class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <img src="https://i.postimg.cc/NFbPcZ4P/bild1logo-1.png" alt="Logo" class="w-10 h-10">
+                    <span class="text-xl font-bold text-primary">
+
+
+TIME TO CLOCK
+
+CONSTRUCTION</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#equipment" class="text-gray-700 hover:text-primary transition-colors">Equipment</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary transition-colors">FAQ</a>
+                    <a href="#calculator" class="text-gray-700 hover:text-primary transition-colors">Calculator</a>
+                    <a href="#contact" class="btn-primary px-6 py-2 !rounded-button whitespace-nowrap">Contact Us</a>
+                </div>
+                
+                <button class="md:hidden w-6 h-6 flex items-center justify-center" id="mobile-menu-btn">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+            </div>
+            
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+                    <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                    <a href="#equipment" class="block px-3 py-2 text-gray-700 hover:text-primary">Equipment</a>
+                    <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                    <a href="#faq" class="block px-3 py-2 text-gray-700 hover:text-primary">FAQ</a>
+                    <a href="#calculator" class="block px-3 py-2 text-gray-700 hover:text-primary">Calculator</a>
+                    <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                    Professional Construction Inspection Services
+                </h1>
+                <p class="text-xl text-white/90 mb-8 leading-relaxed">
+                    Comprehensive building inspections with advanced equipment and certified professionals. Ensuring safety, compliance, and quality in every project.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="btn-primary px-8 py-4 !rounded-button text-lg font-semibold whitespace-nowrap inline-flex items-center justify-center">
+                        Get Free Quote
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                    <a href="#services" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 !rounded-button text-lg font-semibold hover:bg-white/20 transition-all whitespace-nowrap inline-flex items-center justify-center">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Inspection Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive inspection solutions tailored to meet the diverse needs of construction projects, from residential to commercial developments.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-cream p-8 !rounded-lg card-hover">
+                    <div class="w-16 h-16 bg-primary/10 !rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-building-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Structural Inspections</h3>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive structural integrity assessments using advanced non-destructive testing methods to ensure building safety and compliance.
+                    </p>
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20engineer%20conducting%20structural%20inspection%20of%20building%20foundation%20and%20concrete%20structures%2C%20wearing%20safety%20helmet%20and%20using%20inspection%20equipment%2C%20detailed%20architectural%20assessment%2C%20clean%20professional%20photography%20with%20natural%20lighting&width=400&height=250&seq=service001&orientation=landscape" alt="Structural Inspection" class="w-full h-48 object-cover !rounded-lg lazy-image">
+                </div>
+                
+                <div class="bg-cream p-8 !rounded-lg card-hover">
+                    <div class="w-16 h-16 bg-primary/10 !rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-shield-check-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Safety Compliance</h3>
+                    <p class="text-gray-600 mb-6">
+                        Thorough safety audits and compliance checks to ensure all construction activities meet local building codes and safety regulations.
+                    </p>
+                    <img src="https://readdy.ai/api/search-image?query=Construction%20safety%20inspector%20reviewing%20building%20compliance%20documents%20and%20safety%20protocols%2C%20professional%20workplace%20environment%20with%20safety%20equipment%20and%20compliance%20checklists%20visible%2C%20high%20quality%20detailed%20photography&width=400&height=250&seq=service002&orientation=landscape" alt="Safety Compliance" class="w-full h-48 object-cover !rounded-lg lazy-image">
+                </div>
+                
+                <div class="bg-cream p-8 !rounded-lg card-hover">
+                    <div class="w-16 h-16 bg-primary/10 !rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-tools-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Quality Assurance</h3>
+                    <p class="text-gray-600 mb-6">
+                        Detailed quality control inspections throughout all construction phases to maintain the highest standards of workmanship and materials.
+                    </p>
+                    <img src="https://readdy.ai/api/search-image?query=Quality%20assurance%20inspector%20examining%20construction%20materials%20and%20workmanship%2C%20detailed%20close-up%20of%20inspection%20process%20with%20measurement%20tools%20and%20quality%20control%20equipment%2C%20professional%20construction%20site%20environment&width=400&height=250&seq=service003&orientation=landscape" alt="Quality Assurance" class="w-full h-48 object-cover !rounded-lg lazy-image">
+                </div>
+                
+                <div class="bg-cream p-8 !rounded-lg card-hover">
+                    <div class="w-16 h-16 bg-primary/10 !rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-home-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Residential Inspections</h3>
+                    <p class="text-gray-600 mb-6">
+                        Complete home inspection services for buyers, sellers, and homeowners, covering all major systems and structural components.
+                    </p>
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20home%20inspector%20examining%20residential%20property%20interior%20and%20exterior%2C%20detailed%20inspection%20of%20electrical%20systems%20plumbing%20and%20structural%20elements%2C%20modern%20house%20inspection%20process%20with%20professional%20equipment&width=400&height=250&seq=service004&orientation=landscape" alt="Residential Inspections" class="w-full h-48 object-cover !rounded-lg lazy-image">
+                </div>
+                
+                <div class="bg-cream p-8 !rounded-lg card-hover">
+                    <div class="w-16 h-16 bg-primary/10 !rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-building-2-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Commercial Inspections</h3>
+                    <p class="text-gray-600 mb-6">
+                        Specialized commercial building inspections for office complexes, retail spaces, and industrial facilities with detailed reporting.
+                    </p>
+                    <img src="https://readdy.ai/api/search-image?query=Commercial%20building%20inspection%20of%20modern%20office%20complex%2C%20professional%20inspector%20examining%20HVAC%20systems%20and%20commercial%20infrastructure%2C%20detailed%20technical%20assessment%20with%20advanced%20inspection%20equipment%20and%20documentation&width=400&height=250&seq=service005&orientation=landscape" alt="Commercial Inspections" class="w-full h-48 object-cover !rounded-lg lazy-image">
+                </div>
+                
+                <div class="bg-cream p-8 !rounded-lg card-hover">
+                    <div class="w-16 h-16 bg-primary/10 !rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-file-text-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Detailed Reporting</h3>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive inspection reports with detailed findings, recommendations, and photographic documentation for complete transparency.
+                    </p>
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20inspection%20report%20documentation%20process%2C%20detailed%20technical%20drawings%20and%20inspection%20findings%20on%20computer%20screen%2C%20organized%20paperwork%20and%20digital%20reporting%20tools%2C%20clean%20office%20environment%20with%20professional%20documentation&width=400&height=250&seq=service006&orientation=landscape" alt="Detailed Reporting" class="w-full h-48 object-cover !rounded-lg lazy-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipment" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Advanced Inspection Equipment</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We utilize state-of-the-art inspection technology to provide accurate, reliable, and comprehensive assessments of your construction projects.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 !rounded-lg card-hover text-center">
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20thermal%20imaging%20camera%20for%20building%20inspection%2C%20high-tech%20infrared%20detection%20equipment%20on%20clean%20white%20background%2C%20detailed%20product%20photography%20showing%20advanced%20thermal%20inspection%20technology&width=300&height=200&seq=equip001&orientation=landscape" alt="Thermal Imaging" class="w-full h-40 object-cover !rounded-lg mb-4 lazy-image">
+                    <h3 class="text-lg font-semibold mb-2">Thermal Imaging</h3>
+                    <p class="text-gray-600 text-sm">Advanced infrared cameras for detecting heat loss, moisture, and electrical issues.</p>
+                </div>
+                
+                <div class="bg-white p-6 !rounded-lg card-hover text-center">
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20moisture%20meter%20and%20humidity%20detection%20equipment%20for%20construction%20inspection%2C%20precise%20measurement%20tools%20on%20clean%20background%2C%20detailed%20product%20photography%20of%20building%20inspection%20instruments&width=300&height=200&seq=equip002&orientation=landscape" alt="Moisture Detection" class="w-full h-40 object-cover !rounded-lg mb-4 lazy-image">
+                    <h3 class="text-lg font-semibold mb-2">Moisture Detection</h3>
+                    <p class="text-gray-600 text-sm">Precision moisture meters for identifying water damage and humidity issues.</p>
+                </div>
+                
+                <div class="bg-white p-6 !rounded-lg card-hover text-center">
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20structural%20analysis%20equipment%20and%20concrete%20testing%20tools%2C%20advanced%20non-destructive%20testing%20instruments%20for%20building%20inspection%2C%20clean%20product%20photography%20with%20technical%20measurement%20devices&width=300&height=200&seq=equip003&orientation=landscape" alt="Structural Analysis" class="w-full h-40 object-cover !rounded-lg mb-4 lazy-image">
+                    <h3 class="text-lg font-semibold mb-2">Structural Analysis</h3>
+                    <p class="text-gray-600 text-sm">Non-destructive testing equipment for concrete and steel structure assessment.</p>
+                </div>
+                
+                <div class="bg-white p-6 !rounded-lg card-hover text-center">
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20electrical%20testing%20equipment%20and%20multimeter%20for%20building%20inspection%2C%20advanced%20electrical%20safety%20testing%20tools%20on%20clean%20background%2C%20detailed%20product%20photography%20of%20electrical%20inspection%20instruments&width=300&height=200&seq=equip004&orientation=landscape" alt="Electrical Testing" class="w-full h-40 object-cover !rounded-lg mb-4 lazy-image">
+                    <h3 class="text-lg font-semibold mb-2">Electrical Testing</h3>
+                    <p class="text-gray-600 text-sm">Comprehensive electrical system testing and safety verification tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Who We Serve</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Our comprehensive inspection services cater to a diverse range of clients in the construction and real estate industry.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 !rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-hammer-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Construction Contractors</h3>
+                                <p class="text-gray-600">Quality assurance and compliance verification throughout all construction phases to ensure project success.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 !rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-pencil-ruler-2-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Architects & Engineers</h3>
+                                <p class="text-gray-600">Technical validation and structural integrity assessments to support design implementation and safety standards.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 !rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-home-heart-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Property Owners</h3>
+                                <p class="text-gray-600">Comprehensive property assessments for maintenance planning, insurance claims, and investment decisions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 !rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-exchange-dollar-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Real Estate Professionals</h3>
+                                <p class="text-gray-600">Pre-purchase inspections and property condition reports to facilitate informed real estate transactions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20construction%20team%20including%20architects%20engineers%20and%20contractors%20collaborating%20on%20building%20project%2C%20diverse%20group%20of%20construction%20professionals%20reviewing%20blueprints%20and%20plans%2C%20modern%20construction%20site%20with%20safety%20equipment%20and%20professional%20atmosphere&width=600&height=500&seq=about001&orientation=portrait" alt="Professional Team" class="w-full h-96 object-cover !rounded-lg lazy-image">
+                    <div class="absolute inset-0 bg-primary/10 !rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20 bg-cream">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">
+                    Get answers to common questions about our inspection services and processes.
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-white !rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors faq-trigger">
+                        <span class="text-lg font-semibold text-gray-900">How long does a typical inspection take?</span>
+                        <i class="ri-arrow-down-s-line text-xl text-primary transition-transform faq-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            Inspection duration varies based on property size and complexity. Residential inspections typically take 2-4 hours, while commercial inspections may require 4-8 hours or multiple visits for larger properties.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white !rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors faq-trigger">
+                        <span class="text-lg font-semibold text-gray-900">What is included in the inspection report?</span>
+                        <i class="ri-arrow-down-s-line text-xl text-primary transition-transform faq-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            Our comprehensive reports include detailed findings, high-resolution photographs, safety recommendations, compliance status, and priority ratings for any identified issues. Reports are delivered within 24-48 hours.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white !rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors faq-trigger">
+                        <span class="text-lg font-semibold text-gray-900">Are your inspectors certified?</span>
+                        <i class="ri-arrow-down-s-line text-xl text-primary transition-transform faq-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            Yes, all our inspectors are certified professionals with relevant industry qualifications, ongoing training, and extensive field experience. We maintain certifications from recognized inspection organizations.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white !rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors faq-trigger">
+                        <span class="text-lg font-semibold text-gray-900">Do you provide emergency inspection services?</span>
+                        <i class="ri-arrow-down-s-line text-xl text-primary transition-transform faq-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            We offer emergency inspection services for urgent safety concerns, structural damage assessments, and time-sensitive compliance issues. Contact us for same-day or next-day emergency scheduling.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white !rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors faq-trigger">
+                        <span class="text-lg font-semibold text-gray-900">What areas do you serve?</span>
+                        <i class="ri-arrow-down-s-line text-xl text-primary transition-transform faq-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-4">
+                        <p class="text-gray-600">
+                            We provide inspection services throughout the metropolitan area and surrounding regions. Contact us to confirm service availability in your specific location and discuss travel arrangements for remote properties.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Inspection Cost Calculator</h2>
+                <p class="text-xl text-gray-600">
+                    Get an instant estimate for your inspection needs. Prices are calculated in RON per year for ongoing inspection services.
+                </p>
+            </div>
+            
+            <div class="bg-cream p-8 !rounded-lg max-w-2xl mx-auto">
+                <form id="cost-calculator" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Property Type</label>
+                        <select class="w-full p-3 border border-gray-300 !rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" id="property-type">
+                            <option value="residential">Residential Property</option>
+                            <option value="commercial">Commercial Building</option>
+                            <option value="industrial">Industrial Facility</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Property Size (sq meters)</label>
+                        <input type="number" class="w-full p-3 border border-gray-300 !rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" id="property-size" placeholder="Enter property size" min="50" max="10000">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Inspection Frequency</label>
+                        <select class="w-full p-3 border border-gray-300 !rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" id="frequency">
+                            <option value="annual">Annual Inspection</option>
+                            <option value="biannual">Bi-Annual Inspection</option>
+                            <option value="quarterly">Quarterly Inspection</option>
+                            <option value="monthly">Monthly Inspection</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Additional Services</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-3 w-4 h-4 text-primary border-gray-300 !rounded focus:ring-primary" id="thermal-imaging">
+                                <span class="text-sm">Thermal Imaging (+500 RON/inspection)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-3 w-4 h-4 text-primary border-gray-300 !rounded focus:ring-primary" id="structural-analysis">
+                                <span class="text-sm">Structural Analysis (+800 RON/inspection)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-3 w-4 h-4 text-primary border-gray-300 !rounded focus:ring-primary" id="detailed-report">
+                                <span class="text-sm">Detailed Reporting (+300 RON/inspection)</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="w-full btn-primary py-4 !rounded-button text-lg font-semibold whitespace-nowrap" id="calculate-btn">
+                        Calculate Annual Cost
+                    </button>
+                    
+                    <div id="calculation-result" class="hidden bg-white p-6 !rounded-lg border-2 border-primary">
+                        <h3 class="text-xl font-bold text-primary mb-4">Estimated Annual Cost</h3>
+                        <div class="text-3xl font-bold text-gray-900 mb-2" id="total-cost">0 RON</div>
+                        <div class="text-sm text-gray-600" id="cost-breakdown"></div>
+                        <p class="text-sm text-gray-500 mt-4">
+                            *This is an estimate. Final pricing may vary based on specific requirements and site conditions.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">
+                    Ready to schedule your inspection? Contact us today for a free consultation and quote.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 !rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-phone-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Phone</h4>
+                                <p class="text-gray-600">+40 123 456 789</p>
+                                <p class="text-sm text-gray-500">Available Mon-Fri 8:00-18:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 !rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-mail-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Email</h4>
+                                <p class="text-gray-600">info@buildinspectpro.com</p>
+                                <p class="text-sm text-gray-500">We respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 !rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-map-pin-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Address</h4>
+                                <p class="text-gray-600">123 Construction Avenue<br>Bucharest, Romania</p>
+                                <p class="text-sm text-gray-500">Serving nationwide</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 !rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-time-line text-xl text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Business Hours</h4>
+                                <p class="text-gray-600">Monday - Friday: 8:00 - 18:00</p>
+                                <p class="text-gray-600">Saturday: 9:00 - 15:00</p>
+                                <p class="text-gray-600">Sunday: Emergency only</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 !rounded-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">First Name *</label>
+                                <input type="text" required class="w-full p-3 border border-gray-300 !rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Last Name *</label>
+                                <input type="text" required class="w-full p-3 border border-gray-300 !rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Smith">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" required class="w-full p-3 border border-gray-300 !rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john.smith@example.com">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full p-3 border border-gray-300 !rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="+40 123 456 789">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Service Needed</label>
+                            <select class="w-full p-3 border border-gray-300 !rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="residential">Residential Inspection</option>
+                                <option value="commercial">Commercial Inspection</option>
+                                <option value="structural">Structural Assessment</option>
+                                <option value="safety">Safety Compliance</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Message *</label>
+                            <textarea required rows="4" class="w-full p-3 border border-gray-300 !rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none" placeholder="Please describe your inspection needs and any specific requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full btn-primary py-4 !rounded-button text-lg font-semibold whitespace-nowrap">
+                            Send Message
+                            <i class="ri-send-plane-line ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://i.postimg.cc/NFbPcZ4P/bild1logo-1.png" alt="Logo" class="w-8 h-8">
+                        <span class="text-xl font-bold">
+
+                                                TIME TO CLOCK
+
+                                                CONSTRUCTION</span>
+
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Professional construction inspection services with advanced equipment and certified professionals. Ensuring safety, compliance, and quality in every project.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 !rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 !rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 !rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 !rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#services" class="hover:text-white transition-colors">Structural Inspections</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Safety Compliance</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Quality Assurance</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Residential Inspections</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Commercial Inspections</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#equipment" class="hover:text-white transition-colors">Equipment</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#calculator" class="hover:text-white transition-colors">Cost Calculator</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 CONSTRUCTION. All rights reserved. | Professional Construction Inspection Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-buttons">
+        <a href="tel:+40123456789" class="floating-btn" title="Call Us">
+            <i class="ri-phone-line text-xl"></i>
+        </a>
+        <a href="https://wa.me/40123456789?text=Hello, I would like to inquire about your construction inspection services." class="floating-btn" title="WhatsApp">
+            <i class="ri-whatsapp-line text-xl"></i>
+        </a>
+    </div>
+
+    <script id="mobile-menu-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+    <script id="faq-accordion-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqTriggers = document.querySelectorAll('.faq-trigger');
+            
+            faqTriggers.forEach(trigger => {
+                trigger.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.faq-icon');
+                    
+                    faqTriggers.forEach(otherTrigger => {
+                        if (otherTrigger !== this) {
+                            const otherContent = otherTrigger.nextElementSibling;
+                            const otherIcon = otherTrigger.querySelector('.faq-icon');
+                            otherContent.classList.remove('active');
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    content.classList.toggle('active');
+                    if (content.classList.contains('active')) {
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="cost-calculator-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const calculateBtn = document.getElementById('calculate-btn');
+            const resultDiv = document.getElementById('calculation-result');
+            const totalCostDiv = document.getElementById('total-cost');
+            const breakdownDiv = document.getElementById('cost-breakdown');
+            
+            calculateBtn.addEventListener('click', function() {
+                const propertyType = document.getElementById('property-type').value;
+                const propertySize = parseInt(document.getElementById('property-size').value) || 0;
+                const frequency = document.getElementById('frequency').value;
+                const thermalImaging = document.getElementById('thermal-imaging').checked;
+                const structuralAnalysis = document.getElementById('structural-analysis').checked;
+                const detailedReport = document.getElementById('detailed-report').checked;
+                
+                if (propertySize === 0) {
+                    alert('Please enter a valid property size.');
+                    return;
+                }
+                
+                let baseRate = 0;
+                switch (propertyType) {
+                    case 'residential':
+                        baseRate = 2;
+                        break;
+                    case 'commercial':
+                        baseRate = 3.5;
+                        break;
+                    case 'industrial':
+                        baseRate = 5;
+                        break;
+                }
+                
+                let frequencyMultiplier = 0;
+                let inspectionsPerYear = 0;
+                switch (frequency) {
+                    case 'annual':
+                        frequencyMultiplier = 1;
+                        inspectionsPerYear = 1;
+                        break;
+                    case 'biannual':
+                        frequencyMultiplier = 0.9;
+                        inspectionsPerYear = 2;
+                        break;
+                    case 'quarterly':
+                        frequencyMultiplier = 0.8;
+                        inspectionsPerYear = 4;
+                        break;
+                    case 'monthly':
+                        frequencyMultiplier = 0.7;
+                        inspectionsPerYear = 12;
+                        break;
+                }
+                
+                const baseInspectionCost = propertySize * baseRate * frequencyMultiplier;
+                
+                let additionalCosts = 0;
+                let additionalServices = [];
+                
+                if (thermalImaging) {
+                    additionalCosts += 500;
+                    additionalServices.push('Thermal Imaging (+500 RON)');
+                }
+                if (structuralAnalysis) {
+                    additionalCosts += 800;
+                    additionalServices.push('Structural Analysis (+800 RON)');
+                }
+                if (detailedReport) {
+                    additionalCosts += 300;
+                    additionalServices.push('Detailed Reporting (+300 RON)');
+                }
+                
+                const totalPerInspection = baseInspectionCost + additionalCosts;
+                const totalAnnualCost = totalPerInspection * inspectionsPerYear;
+                
+                totalCostDiv.textContent = `${Math.round(totalAnnualCost).toLocaleString()} RON`;
+                
+                let breakdown = `Base cost: ${Math.round(baseInspectionCost).toLocaleString()} RON per inspection<br>`;
+                breakdown += `Inspections per year: ${inspectionsPerYear}<br>`;
+                if (additionalServices.length > 0) {
+                    breakdown += `Additional services: ${additionalServices.join(', ')}<br>`;
+                }
+                breakdown += `Cost per inspection: ${Math.round(totalPerInspection).toLocaleString()} RON`;
+                
+                breakdownDiv.innerHTML = breakdown;
+                resultDiv.classList.remove('hidden');
+                
+                resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+    </script>
+
+    <script id="contact-form-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(contactForm);
+                const firstName = contactForm.querySelector('input[type="text"]').value;
+                const lastName = contactForm.querySelectorAll('input[type="text"]')[1].value;
+                const email = contactForm.querySelector('input[type="email"]').value;
+                const phone = contactForm.querySelector('input[type="tel"]').value;
+                const service = contactForm.querySelector('select').value;
+                const message = contactForm.querySelector('textarea').value;
+                
+                const subject = 'Inspection Service Inquiry';
+                const body = `Name: ${firstName} ${lastName}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AService: ${service}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+                
+                window.location.href = `mailto:info@buildinspectpro.com?subject=${subject}&body=${body}`;
+            });
+        });
+    </script>
+
+    <script id="lazy-loading-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const lazyImages = document.querySelectorAll('.lazy-image');
+            
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            lazyImages.forEach(img => {
+                imageObserver.observe(img);
+            });
+        });
+    </script>
+
+    <script id="smooth-scroll-script">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = targetElement.offsetTop - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = 'fCDS5prv90vXUUVbIc9ceg';
+    window.host = 'readdy.ai';
+</script>
+
+</html>
